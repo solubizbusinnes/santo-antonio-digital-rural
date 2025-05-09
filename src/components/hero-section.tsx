@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
-
 const HeroSection = () => {
-  return (
-    <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80')] bg-cover bg-center">
+  return <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80')] bg-cover bg-center">
       <div className="hero-overlay"></div>
       <div className="container mx-auto px-4 z-10 text-center">
         <div className="max-w-3xl mx-auto animate-fade-in">
@@ -18,7 +15,7 @@ const HeroSection = () => {
             <Button size="lg" className="bg-green-600 hover:bg-green-700">
               Saiba mais
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button size="lg" variant="outline" className="border-white hover:bg-white/10 text-zinc-50 text-justify">
               Associe-se
             </Button>
           </div>
@@ -54,8 +51,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
