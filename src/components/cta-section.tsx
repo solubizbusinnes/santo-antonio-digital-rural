@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
@@ -13,8 +14,8 @@ const CTASection = () => {
         <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
           Junte-se a nós e tenha acesso a todos os benefícios e serviços exclusivos para associados do Sindicato Rural de Santo Antônio do Descoberto.
         </p>
-        <Button size="lg" className="bg-white text-green-800 hover:bg-green-100">
-          Associe-se agora
+        <Button size="lg" className="bg-white text-green-800 hover:bg-green-100" asChild>
+          <Link to="/associe-se">Associe-se agora</Link>
         </Button>
       </div>
     </section>
